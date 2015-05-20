@@ -22,6 +22,8 @@ namespace DJF_web_api_POC.Models
 		public System.Data.Entity.DbSet<DJF_web_api_POC.Models.Member> Members { get; set; }
 
 		public System.Data.Entity.DbSet<DJF_web_api_POC.Models.Association> Associations { get; set; }
+
+		public System.Data.Entity.DbSet<DJF_web_api_POC.Models.AssociationCommittee> AssociationCommittees { get; set; }
     
     }
 }

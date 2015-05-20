@@ -197,11 +197,24 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AssociationCommitteesController.cs" />
     <Compile Include="Controllers\AssociationsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505201325098_NewInitial.cs" />
+    <Compile Include="Migrations\201505201325098_NewInitial.Designer.cs">
+      <DependentUpon>201505201325098_NewInitial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505201409295_AssocComm.cs" />
+    <Compile Include="Migrations\201505201409295_AssocComm.Designer.cs">
+      <DependentUpon>201505201409295_AssocComm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201505201419365_AssocCommGuids.cs" />
+    <Compile Include="Migrations\201505201419365_AssocCommGuids.Designer.cs">
+      <DependentUpon>201505201419365_AssocCommGuids.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -283,6 +296,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201505201325098_NewInitial.resx">
+      <DependentUpon>201505201325098_NewInitial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505201409295_AssocComm.resx">
+      <DependentUpon>201505201409295_AssocComm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201505201419365_AssocCommGuids.resx">
+      <DependentUpon>201505201419365_AssocCommGuids.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

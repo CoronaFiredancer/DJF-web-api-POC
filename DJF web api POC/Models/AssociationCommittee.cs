@@ -13,12 +13,12 @@ namespace DJF_web_api_POC.Models
 		public ICollection<Association> CommitteeAssociations { get; set; }
 
 		//Foregin keys, needed or taken care of by EF via the collections?
-		//public Guid MemberGuid { get; set; }
-		//public Guid AssociationGuid { get; set; }
+		public Guid MemberGuid { get; set; }
+		public Guid AssociationGuid { get; set; }
 
 		//Navigation properties
-		public Member Member { get; set; }
-		public Association Association { get; set; }
+		//public Member Member { get; set; }
+		//public Association Association { get; set; }
 
 		public AssociationCommittee()
 		{

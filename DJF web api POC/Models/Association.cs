@@ -12,10 +12,10 @@ namespace DJF_web_api_POC.Models
 		public ICollection<Member> AssociationMembers { get; set; }
 
 		//Foreign key
-		public Guid ChairmanGuid { get; set; }
+		//public Guid ChairmanGuid { get; set; }
 
 		//Navigation Property
-		public Member Member { get; set; }
+		//public Member Member { get; set; }
 
 		public Association()
 		{
